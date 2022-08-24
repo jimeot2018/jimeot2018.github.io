@@ -6,7 +6,7 @@
   }
 </style>
 <div id="window-info">
-  <div>이 컴퓨터의 IP 주소: <span id="client-ip"></span></div><br>
+  <div>이 컴퓨터의 IP 주소: <span id="w-i-client-ip"></span></div><br>
   <div>현재 페이지의 URL: <span id="w-i-href"></span></div>
   <div>바로 전 페이지의 URI: <span id="w-i-referrer"></span></div>
   <div>사용자의 에이전트: <span id="w-i-userAgent"></span></div>
@@ -21,7 +21,7 @@
   document.body.appendChild(se);
   document.body.removeChild(se);
   function callback(data) {
-    document.getElementById('client-ip').textContent = data.ip;
+    document.getElementById('w-i-client-ip').textContent = data.ip;
   }
   document.getElementById('w-i-href').textContent = window.location.href;
   document.getElementById('w-i-referrer').textContent = window.document.referrer;
