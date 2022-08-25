@@ -1,12 +1,5 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
 .bgimg {
-  border: 0;
-  padding: 0;
   background-image: url('/../img/main.png');
-  min-height: 100%;
   background-position: center;
   background-size: cover;
 }
