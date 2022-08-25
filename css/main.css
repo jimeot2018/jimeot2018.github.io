@@ -1,4 +1,13 @@
-body {
-  background: url('../img/main.png');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.bgimg {
+  border: 0;
+  padding: 0;
+  background-image: url('../img/main.png');
+  min-height: 100%;
+  background-position: center;
   background-size: cover;
 }
