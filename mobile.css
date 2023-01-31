@@ -1,11 +1,11 @@
 @charset "utf-8";
 @font-face {
 	font-family: 'Nanum Gothic';
-	src: url('../font/nanum.ttf') ;  /*웹폰트 불러오기*/
+	src: url('./NanumGothicCoding.ttf') ;  /*웹폰트 불러오기*/
 }
 @font-face {
 	font-family: 'Yanone';
-	src: url('../font/Yanone.woff') ;  /*웹폰트 불러오기*/
+	src: url('./YanoneKaffeesatz-Regular.ttf') ;  /*웹폰트 불러오기*/
 }
 @font-face {
   font-family: 'fontello';
