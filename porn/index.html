@@ -70,20 +70,23 @@
     <div class="badge-custom">SEARCH · FAST · SIMPLE</div>
     <h1>Search what you want JAV</h1>
 
-    <form class="search-box d-flex gap-2" onsubmit="goSearch(event)">
-      <input id="keyword" class="form-control" type="text" placeholder="코드를 입력하세요">
-      <button class="search-btn px-4" type="submit">Search</button>
+    <form class="search-box d-grid gap-2" onsubmit="return false;">
+     <input id="keyword" class="form-control" type="text" placeholder="코드를 입력하세요">
+     <button class="search-btn" onclick="goSite1()">JAV 검색</button>
+     <button class="search-btn" style="background:#b83fd1;" onclick="goSite2()">FC2 검색</button>
     </form>
   </div>
 
   <script>
-    function goSearch(e) {
-      e.preventDefault();
-      const keyword = document.getElementById('keyword').value.trim();
-      if (!keyword) return;
-
-      const url = "https://missav.ws/dm2/ko/" + encodeURIComponent(keyword);
-      window.open(url, "_blank");   // 새 탭으로 열기
+    function goSite1() {
+      const k = document.getElementById('keyword').value.trim();
+      if (!k) return;
+      window.open("https://missav.ws/ko/search/" + encodeURIComponent(k), "_blank");
+    }
+    function goSite2() {
+      const k = document.getElementById('keyword').value.trim();
+      if (!k) return;
+      window.open("https://missav.ws/ko/fc2-ppv-" + encodeURIComponent(k), "_blank");
     }
   </script>
 
