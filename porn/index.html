@@ -68,10 +68,10 @@
 
   <div class="container-box">
     <div class="badge-custom">SEARCH · FAST · SIMPLE</div>
-    <h1>Search what you want</h1>
+    <h1>Search what you want JAV</h1>
 
     <form class="search-box d-flex gap-2" onsubmit="goSearch(event)">
-      <input id="keyword" class="form-control" type="text" placeholder="검색어를 입력하세요">
+      <input id="keyword" class="form-control" type="text" placeholder="코드를 입력하세요">
       <button class="search-btn px-4" type="submit">Search</button>
     </form>
   </div>
@@ -82,8 +82,8 @@
       const keyword = document.getElementById('keyword').value.trim();
       if (!keyword) return;
 
-      const url = "https://missav.ws/ko/search/" + encodeURIComponent(keyword);
-      window.location.href = url;
+      const url = "https://missav.ws/dm2/ko/" + encodeURIComponent(keyword);
+      window.open(url, "_blank");   // 새 탭으로 열기
     }
   </script>
 
